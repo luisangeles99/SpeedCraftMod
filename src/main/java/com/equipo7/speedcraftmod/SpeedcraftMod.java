@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package com.equipo7.speedcraftmod;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -18,13 +18,13 @@ import org.apache.logging.log4j.Logger;
 import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod("examplemod")
-public class ExampleMod
+@Mod(MinecraftMod.MOD_ID)
+public class SpeedcraftMod extends MinecraftMod
 {
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public ExampleMod() {
+    public SpeedcraftMod() {
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading
@@ -61,6 +61,31 @@ public class ExampleMod
     public void onServerStarting(ServerStartingEvent event) {
         // do something when the server starts
         LOGGER.info("HELLO from server starting");
+    }
+
+    @Override
+    protected void setUpScreen() {
+
+    }
+
+    @Override
+    protected void nextReset() {
+
+    }
+
+    @Override
+    protected void setController() {
+
+    }
+
+    @Override
+    protected void setConnector() {
+
+    }
+
+    @Override
+    protected void stopReset() {
+
     }
 
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
