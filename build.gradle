@@ -210,3 +210,5 @@ publishing {
         }
     }
 }
+
+apply from: "https://moddingtutorials.org/applesilicon.gradle"

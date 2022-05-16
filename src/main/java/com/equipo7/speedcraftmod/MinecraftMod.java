@@ -5,7 +5,7 @@ abstract class MinecraftMod {
     protected int version;
     protected static final String MOD_ID = "speedcraftmod";
 
-    //TODO: Implement some to apply template
+
     protected abstract void setUpScreen();
     protected abstract void nextReset();
     protected abstract void setController();
