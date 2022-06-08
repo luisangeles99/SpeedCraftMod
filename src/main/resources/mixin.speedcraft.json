@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.equipo7.speedcraftmod.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "ModController",
+    "ModConnector"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "mixin.speedcraft-refmap.json"
+}
